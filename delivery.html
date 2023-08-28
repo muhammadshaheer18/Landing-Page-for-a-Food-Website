@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <title>Delivery-Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: 50vh 50vh;
+            gap: 10px 10px;
+            grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+        }
+
+        .grid-item {
+            display: flex;
+            flex-direction: column;
+            gap: 10px 10px;
+            grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+        }
+
+        .flex-item {
+            display: flex;
+            flex-direction: row;
+            gap: 20px 20px;
+        }
+
+        h1,
+        h2 {
+            font-family: 'Amatic SC', cursive;
+            font-size: 60px;
+            color: black;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h6 {
+            color: black;
+            font-family: 'Rancho', cursive;
+            font-size: 25px;
+        }
+
+        p {
+            font-family: 'Rancho', cursive;
+            font-size: 21px;
+            height: 120px;
+            width: 200px;
+            color: black;
+        }
+
+        button {
+            width: 150px;
+            height: 40px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        body {
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Delivery-Menu</h1>
+        <h6>Welcome to the Fasttastic Menu ! where flavors come to life! Indulge in a culinary journey that showcases a
+            symphony of tastes. From sizzling starters to mouthwatering mains and delightful desserts, our menu is a
+            celebration of delectable dishes crafted with passion and precision. Explore a world of Fasttastic flavors
+            that will tantalize your taste buds and leave you craving for more.</h6>
+        <div class="grid-container container-fluid">
+            <div class="grid-item it1">
+                <h2>Pizza pizzeria</h2>
+                <div class="flex-item">
+                    <img src="./pizza.jpg" alt="" height="200px" width="300px">
+                    <p>A delicious baked dish consisting of a round dough base topped with a variety of ingredients.</p>
+                    <div class="grid-item">
+                        <button type="button" class="btn btn-danger">Add to Cart</button>
+                        <button type="button" class="btn btn-danger">Price: $5</button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item it2">
+                <h2>Zingero Burger</h2>
+                <div class="flex-item">
+                    <img src="./zinger.jpg" alt="" height="200px" width="300px">
+                    <p>A crispy patty, seasoned to perfection, tucked between two soft buns, creating a flavor
+                        explosion.</p>
+                    <div class="grid-item">
+                        <button type="button" class="btn btn-danger">Add to Cart</button>
+                        <button type="button" class="btn btn-danger">Price: $5</button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item it3">
+                <h2>Shawarma Wrapyy</h2>
+                <div class="flex-item">
+                    <img src="./shawarma.jpg" alt="" height="200px" width="300px">
+                    <p>The perfect combination of tender meat, aromatic spices, and mouthwatering flavors, all in one
+                        convenient wrap.</p>
+                    <div class="grid-item">
+                        <button type="button" class="btn btn-danger">Add to Cart</button>
+                        <button type="button" class="btn btn-danger">Price: $5</button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item it4">
+                <h2>Club Decker Sandwich</h2>
+                <div class="flex-item">
+                    <img src="./club.jpg" alt="" height="200px" width="300px">
+                    <p>A club sandwich typically includes ingredients such as sliced turkey or chicken, bacon and more
+                    </p>
+                    <div class="grid-item">
+                        <button type="button" class="btn btn-danger">Add to Cart</button>
+                        <button type="button" class="btn btn-danger">Price: $5</button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item it5">
+                <h2>Beef Classic Burger</h2>
+                <div class="flex-item">
+                    <img src="./beef.jpg" alt="" height="200px" width="300px">
+                    <p>A beef burger is a popular food item composed of a ground beef patty, typically served in a bun.
+                    </p>
+                    <div class="grid-item">
+                        <button type="button" class="btn btn-danger">Add to Cart</button>
+                        <button type="button" class="btn btn-danger">Price: $5</button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item it6">
+                <h2>Chicken Juicy Nuggets</h2>
+                <div class="flex-item">
+                    <img src="./nuggets.jpg" alt="" height="200px" width="300px">
+                    <p>"Golden, crispy perfection in every bite"</p>
+                    <div class="grid-item">
+                        <button type="button" class="btn btn-danger">Add to Cart</button>
+                        <button type="button" class="btn btn-danger">Price: $5</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
